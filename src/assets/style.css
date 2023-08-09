@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Nunito Sans", sans-serif;
+  color: #0f172a;
+}
+
+H1 {
+  font-size: 2.3rem;
+}
+
+H2 {
+  font-size: 1.5;
+  margin-bottom: 0.3rem;
+}
+
+H3 {
+  font-size: 1rem;
+}
+
+#content-wrapper > * {
+  width: clamp(60vw,65vw,70vw);
+  margin-top: 3rem;
+  margin-left: 10vw;
+}
+
+main {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: left;
+  /* min-height: auto;   */
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+hr {
+  border: 2px solid #0369a1;
+}
+
+#admission-graph {
+  height: clamp(30vh, 40vh, 70vh);
+  margin-right: auto;
+}
+
+[id*="radio"] > * {
+  cursor: pointer;
+}
+
+[id*="radio"] > * + * {
+  margin-left: 1rem;
+  padding: 0.5rem;
+}
+
+input[type="radio"] {
+  margin-right: 0.3em;
+}
+
+/* utilities */
+
+.title-container {
+  max-width: 40%;
+}
+
+.cards-container {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  text-align: center;
+}
+
+.card span {
+  font-size: 3em;
+}
