@@ -24,7 +24,7 @@ def stats_graph(data, gender, category):
     df = pd.read_json(data).replace(0, pd.NA)
 
     fig = go.Figure(
-        data=dict(x=df.index, y=df[category]),
+        data=dict(x=df.index, y=df[category], line=dict(width=5)),
         layout=dict(title=f"{category_dict[category]} {gender.lower()} inom området data/IT", **base_layout),
     )
     return fig
