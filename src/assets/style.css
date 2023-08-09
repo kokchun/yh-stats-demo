@@ -25,9 +25,9 @@ H3 {
 }
 
 #content-wrapper > * {
-  width: clamp(60vw,65vw,70vw);
+  width: 80vw;
   margin-top: 3rem;
-  margin-left: 10vw;
+  margin-left: 5vw;
 }
 
 main {
